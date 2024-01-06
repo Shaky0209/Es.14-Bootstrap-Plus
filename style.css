@@ -67,6 +67,11 @@ ul.navbar-nav > li.style-nav.nav-item > a, ul.dropdown-menu > li > a{
   color: red;
   
 }
+
+.card-title{
+  height: 50px;
+}
+
 .start{
   color: transparent;
 }

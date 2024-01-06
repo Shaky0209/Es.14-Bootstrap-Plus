@@ -81,27 +81,49 @@
     <div class="container-fluid m-1">
 
       <div class="row mx-1 my-4">
-        <div class="col-1">
+        <div class="col-1 mx-1">
           <button class="btn btn-danger clear">Clear</button>
           <button class="btn btn-success openAll d-none">Restore</button>
         </div>
-        <div class="col-1">
+        <div class="col-1 mx-1">
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-danger news mb-3" data-bs-toggle="modal" data-bs-target="#newsletter">News</button>
           <!-- Modal -->
           <div class="modal fade" id="newsletter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header backTitle">
                   <h5 class="modal-title" id="exampleModalLabel"></h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body backMsg">
                   <p class="msgNews"></p>
                   <input class="yourMail" type="email" placeholder="Inserisci la tua e-mail">
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer footMsg">
                   <button type="button" class="btn btn-success send-contact">Invia</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Chiudi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1 mx-1">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-danger btnCounter" data-bs-toggle="modal" data-bs-target="#counter">Counter</button>
+          <!-- Modal -->
+          <div class="modal fade" id="counter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Conteggio delle offerte disponibili</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="countMsg"></p>
+                </div>
+                <div class="modal-footer">
                   <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Chiudi</button>
                 </div>
               </div>
@@ -757,7 +779,34 @@
     <div class="row">
       <div class="col-12 d-flex flex-column align-items-center">
         <p class="foot-contact">Per qualsiasi informazione o per una prenotazione clicca il pulsante sottostante per contattarci!</p>
-        <a class="button-ancore" href="contacts.html"><button type="button" class="btn btn-danger foot-button m-4">Contattaci!</button></a>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-danger btnContact mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Contattaci!</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header reqHead">
+                <h5 class="modal-title reqTitle" id="exampleModalLabel">Invia la tua richiesta!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body reqMod">
+                <div class="row d-flex flex-column align-items-center">
+                  <div class="col-12 col-md-6 modFormContact">
+                    <!-- <input type="text" class="mb-2" placeholder="Inserisci il tuo nome">
+                    <input type="text" class="mb-2" placeholder="Inserisci il tuo cognome">
+                    <input type="email" class="mb-2" placeholder="Inserisci la tua e-mail">
+                    <textarea name="message" id="request" placeholder="Inserisci la tua richiesta" cols="30" rows="10"></textarea> -->
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer reqFoot">
+                <button type="button" class="btn btn-success sendRequest">Invia</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
