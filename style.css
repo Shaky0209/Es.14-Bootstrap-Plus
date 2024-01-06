@@ -15,6 +15,10 @@ footer{
   height: 57px;
 }
 
+.fa-burger{
+  color:#4447ff;
+}
+
 ul.navbar-nav > li.style-nav.nav-item > a, ul.dropdown-menu > li > a{
   color: red;
   font-weight: 700;
@@ -61,6 +65,7 @@ ul.navbar-nav > li.style-nav.nav-item > a, ul.dropdown-menu > li > a{
 
 .card-title, .jumbotron, .welcome-summer, .last-minute{
   color: red;
+  
 }
 .start{
   color: transparent;
@@ -141,9 +146,11 @@ ul.navbar-nav > li.style-nav.nav-item > a, ul.dropdown-menu > li > a{
   background: rgba(0, 0, 0, 0.3);
 }
 
+
+
 /* Media Screen*/
 
-@media screen and (max-width: 466px){
+@media screen and (max-width: 500px){
   h2{
     font-size: 18px;
   }
