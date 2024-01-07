@@ -190,16 +190,16 @@ const addForm = ()=>{
 }
 
 
-btnFlyClose.addEventListener("click", ()=>{flyClose();});
-btnFlyOpen.addEventListener("click", ()=>{flyOpen();});
-btnWeekClose.addEventListener("click", ()=>{weekClose();});
-btnWeekOpen.addEventListener("click", ()=>{weekOpen();});
-btnSummerClose.addEventListener("click", ()=>{summerClose();});
-btnSummerOpen.addEventListener("click", ()=>{summerOpen();});
-sendContact.addEventListener("click", ()=>{received();});
-btnNews.addEventListener("click", ()=>{newsLetter();});
-btnClear.addEventListener("click", ()=>{clear();});
-btnRestore.addEventListener("click", ()=>{restore();});
-btnCounter.addEventListener("click", ()=>{countMsg();});
-btnRequest.addEventListener("click", ()=>{sendRequest();});
-btnContact.addEventListener("click", ()=>{addForm();})
+btnFlyClose.addEventListener("click", flyClose);
+btnFlyOpen.addEventListener("click", flyOpen);
+btnWeekClose.addEventListener("click", weekClose);
+btnWeekOpen.addEventListener("click", weekOpen);
+btnSummerClose.addEventListener("click", summerClose);
+btnSummerOpen.addEventListener("click", summerOpen);
+sendContact.addEventListener("click", received);
+btnNews.addEventListener("click", newsLetter);
+btnClear.addEventListener("click", clear);
+btnRestore.addEventListener("click", restore);
+btnCounter.addEventListener("click", countMsg);
+btnRequest.addEventListener("click", sendRequest);
+btnContact.addEventListener("click", addForm);
